@@ -21,6 +21,6 @@ Route | Parameters | Contents
 ------|------------|------------
 /lang-strings | lang | Strings in the selected language* for the website
 
-__hint: http://bookapi.pedrosg.com/lang-strings?lang=esp__
+*hint: http://bookapi.pedrosg.com/lang-strings?lang=esp*
 
 > (*): available languages: [eng]lish, [esp]añol.
