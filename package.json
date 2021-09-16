@@ -1,0 +1,22 @@
+{
+  "name": "portfolio-server",
+  "version": "1.0.0",
+  "description": "Personal Pedro Stein portfolio server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dredstrauss/personal-portfolio.git"
+  },
+  "author": "Pedro Stein",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dredstrauss/personal-portfolio/issues"
+  },
+  "homepage": "https://github.com/dredstrauss/personal-portfolio#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
