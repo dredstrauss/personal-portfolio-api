@@ -4,5 +4,11 @@
             "esp": "Servidor activo en el puerto",
             "eng": "Server listening on port"
         }
+    },
+    "lang-strings": {
+        "error": {
+            "eng": "Server error (500)",
+            "esp": "Error de servidor (500)"
+        }
     }
 }

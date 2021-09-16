@@ -4,22 +4,27 @@ const { getLang } = require('./Lang');
 const app = express();
 
 let text = require('../lang.json'); text = text.app;
-let LANG = 'esp';
 
 const server = (PORT,LANG) => {
-    LANG = LANG;
     app.listen(PORT,() => console.log(`${text.listening[LANG]}: ${PORT}`));
 }
 
-app.get('/lang-strings', (req,res) => {
+app.get('/lang-strings', async(req,res) => {
     let queries = url.parse(req.url,true).query;
-    let result = JSON.stringify(getLang(queries.lang));
-    res.end(result)
+
+    try {
+        let data = await getLang(queries.lang);
+        res.end(data)
+    } catch (e) {
+        console.error(e);
+        res.end()
+    }
+
 });
 
-app.get('*', (req,res) => {
+app.get('*', async(req,res) => {
     req
-    res.end()
+    res.end();
 })
 
 module.exports = { server };
