@@ -24,7 +24,7 @@ app.get('/lang-strings', async(req,res) => {
 
 app.get('*', async(req,res) => {
     req
-    res.end();
+    res.redirect('https://github.com/dredstrauss/personal-portfolio');
 })
 
 module.exports = { server };
