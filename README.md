@@ -2,6 +2,8 @@
 
 Personal Node/Express API REST server for personal portfolio website.
 
+API link: http://bookapi.pedrosg.com
+
 ### Used technologies
 
 - Node JS
@@ -18,5 +20,7 @@ Personal Node/Express API REST server for personal portfolio website.
 Route | Parameters | Contents
 ------|------------|------------
 /lang-strings | lang | Strings in the selected language* for the website
+
+*hint: http://bookapi.pedrosg.com/lang-strings?lang=esp*
 
 > (*): available languages: [eng]lish, [esp]añol.
