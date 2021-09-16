@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/dredstrauss/personal-portfolio#readme",
   "dependencies": {
+    "@types/express": "^4.17.13",
     "express": "^4.17.1"
   }
 }
