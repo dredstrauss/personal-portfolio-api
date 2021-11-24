@@ -11,4 +11,18 @@ const reorderLangStrings = (rawLang) => {
     return lang
 };
 
-module.exports = { reorderLangStrings };
+const reorderBlogStrings = (rawBlog => {
+    let blog = {};
+
+    rawBlog.forEach((strObj) => {
+
+        if (!blog[strObj.slug]) { blog[strObj.slug] = { 'created' : strObj.created } };
+        if (!blog[strObj.slug][strObj.field]) {blog[strObj.slug][strObj.field] = {}};
+        blog[strObj.slug][strObj.field] = strObj.str;
+
+    });
+
+    return blog
+});
+
+module.exports = { reorderLangStrings, reorderBlogStrings };

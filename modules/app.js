@@ -2,6 +2,7 @@ const express = require('express');
 const url = require('url');
 const cors = require('cors');
 const { getLang } = require('./Lang');
+const { getBlog } = require('./Blog');
 const app = express();
 
 let text = require('../lang.json'); text = text.app;
@@ -22,6 +23,19 @@ app.get('/lang-strings', async(req,res) => {
 
     try {
         let data = await getLang(queries.lang);
+        res.end(data)
+    } catch (e) {
+        console.error(e);
+        res.end()
+    }
+
+});
+
+app.get('/blog-strings', async(req,res) => {
+    let queries = url.parse(req.url,true).query;
+
+    try {
+        let data = await getBlog(queries.lang);
         res.end(data)
     } catch (e) {
         console.error(e);

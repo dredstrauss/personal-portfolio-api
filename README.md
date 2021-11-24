@@ -10,6 +10,8 @@ API link: http://bookapi.pedrosg.com
 
 - Express
 
+- PostgreSQL
+
 ### Features
 
 - Deployed on Heroku
@@ -19,7 +21,8 @@ API link: http://bookapi.pedrosg.com
 
 Route | Parameters | Contents
 ------|------------|------------
-/lang-strings | lang | Strings in the selected language* for the website
+/lang-strings | lang | Strings for the website texts in the selected language* (such as menus or titles)
+/blog-strings | lang | Strings for the blog contents in the selected language* 
 
 *hint: http://bookapi.pedrosg.com/lang-strings?lang=esp*
 
