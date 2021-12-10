@@ -2,7 +2,7 @@
 
 Personal Node/Express API REST server for personal portfolio website.
 
-API link: http://bookapi.pedrosg.com
+API link: https://dred-strauss-portfolio.herokuapp.com/
 
 ### Used technologies
 
@@ -22,8 +22,8 @@ API link: http://bookapi.pedrosg.com
 Route | Parameters | Contents
 ------|------------|------------
 /lang-strings | lang | Strings for the website texts in the selected language* (such as menus or titles)
-/blog-strings | lang | Strings for the blog contents in the selected language* 
+/blog-strings | lang | Strings for the blog contents in the selected language*
 
-*hint: http://bookapi.pedrosg.com/lang-strings?lang=esp*
+*hint: https://dred-strauss-portfolio.herokuapp.com/lang-strings?lang=esp*
 
 > (*): available languages: [eng]lish, [esp]añol.
