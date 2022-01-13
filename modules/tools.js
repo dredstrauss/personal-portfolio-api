@@ -5,7 +5,9 @@ const reorderLangStrings = (rawLang) => {
 
         if (!lang[strObj.page]) {lang[strObj.page] = {}};
         if (!lang[strObj.page][strObj.section]) {lang[strObj.page][strObj.section] = {}};
-        lang[strObj.page][strObj.section][strObj.element] = strObj.str;
+        if (!lang[strObj.page][strObj.section][strObj.element]) {lang[strObj.page][strObj.section][strObj.element] = []};
+
+        lang[strObj.page][strObj.section][strObj.element].push(strObj.str);
     });
 
     return lang
